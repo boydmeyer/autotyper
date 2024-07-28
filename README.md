@@ -1,6 +1,15 @@
 # Autotyper
 Automatically send your pre-set messages with ease
 
+## Example Usage
+
+1. Pre-set a message:
+   ```bash
+   :setmsg Welcome everyone!
+2. Send the pre-set message:
+   ```bash
+   !
+   ```
 ## Installation
 
 1. **Clone the repository:**
