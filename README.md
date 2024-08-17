@@ -1,15 +1,6 @@
 # Autotyper
-Automatically send your pre-set messages with ease
+The AutoTyper app features an intuitive, easy-to-use interface that simplifies repetitive messaging by automatically sending predefined messages at customizable intervals.
 
-## Example Usage
-
-1. Pre-set a message:
-   ```bash
-   :setmsg Welcome everyone!
-2. Send the pre-set message:
-   ```bash
-   !
-   ```
 ## Installation
 
 1. **Clone the repository:**
