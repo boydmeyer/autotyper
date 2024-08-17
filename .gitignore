@@ -26,3 +26,4 @@ go.work.sum
 
 # also ignore bin folder
 bin/
+dist/
