@@ -16,12 +16,12 @@ mkdir -p "$DIST_DIR/macos"
 # Build for Windows
 echo "Building for Windows..."
 GOOS=windows GOARCH=amd64 go build -o "${BIN_DIR}/${NAME}-win.exe" -ldflags="-X main.Version=${VERSION}" .
-cp "${BIN_DIR}/${NAME}-win.exe" "$DIST_DIR/windows/${NAME}.exe"
+cp "${BIN_DIR}/${NAME}-win.exe" "$DIST_DIR/windows/${NAME}-win.exe"
 
 # Build for Linux
 echo "Building for Linux..."
 GOOS=linux GOARCH=amd64 go build -o "${BIN_DIR}/${NAME}-linux" -ldflags="-X main.Version=${VERSION}" .
-cp "${BIN_DIR}/${NAME}-linux" "$DIST_DIR/linux/${NAME}"
+cp "${BIN_DIR}/${NAME}-linux" "$DIST_DIR/linux/${NAME}-linux"
 
 # Build for macOS
 echo "Building for macOS..."
@@ -33,7 +33,7 @@ export GOOS=darwin
 export GOARCH=amd64  # or arm64 for Apple Silicon
 export MACOSX_DEPLOYMENT_TARGET=10.14
 
-go build -o "${BIN_DIR}/${NAME}-darwin" -ldflags="-X main.Version=${VERSION}" .
-cp "${BIN_DIR}/${NAME}-darwin" "$DIST_DIR/macos/${NAME}"
+go build -o "${BIN_DIR}/${NAME}-mac" -ldflags="-X main.Version=${VERSION}" .
+cp "${BIN_DIR}/${NAME}-mac" "$DIST_DIR/macos/${NAME}-mac"
 
 echo "Build and packaging complete."
